@@ -1,0 +1,6 @@
+Problem-> [flask] socket.error: [Errno 98] Address already in use
+
+Solution ->
+1. run $ lsof -i: <port No> (ex: run lsof -i:5000) if port is 5000
+2. find the PID No from list.
+3. run $ sudo kill -9 <PID>
